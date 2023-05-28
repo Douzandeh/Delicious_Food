@@ -12,6 +12,12 @@
   text-align: center;
 }
 
+@media screen and (max-width:445px) {
+   .header{
+    background-position-x: 10%;
+   }
+}
+
 .header1 {
   font-size: 30px;
   color: white;
