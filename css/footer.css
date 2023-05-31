@@ -1,4 +1,65 @@
 .footer{
-    background-color: crimson;
     grid-column: 1 / -1;
+    margin: 1rem 0px;
+    border-top: 1px solid black;
+    background-color: whitesmoke;
 }
+
+.footer-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(240px , 1fr));
+    grid-template-rows: 1fr;
+    text-align: center;
+    grid-gap: 7px;
+    padding: 35px;
+}
+
+.copy{
+    margin-top: 1rem;
+    font-size: 12px;
+    text-align: center;
+}
+
+.copy-text , .footer-title{
+    color: orange;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+li:hover{
+    color: orange;
+
+}
+
+.telegram,
+.whatsapp,
+.youtube{
+    transition: all 0.3s;
+}
+
+.telegram:hover{
+    color: rgb(0, 132, 255);
+}
+
+.whatsapp:hover{
+    color: rgb(49, 233, 8);
+}
+
+.youtube:hover{
+    color: rgb(235, 9, 9);
+}
+
+@media screen and (max-width:557px) {
+    .footer-section{
+        text-align: start;
+    }
+ }
